@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind components;
+@tailwind utilities;
+@tailwind components;
+@tailwind utilities;
+
+/* create a variable for the background color of the body element in the src/index.css file:  */
+:root {
+  --bg-color: #fafafa;
+  /* --primary-color: #177E89; */
+}
+body {
+  background-color: var(--bg-color);
+  padding-top: 5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+  -webkit-appearance: textfield;
+}
+.last-child-center {
+  @apply justify-self-center;
+}
